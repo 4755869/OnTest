@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="<%=basePath%>">
+
+		<title>My JSP 'index.jsp' starting page</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+	    <meta charset="UTF-8">
+		<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+
+
+
+
+		<style>
+
+#a_register{
+text-decoration:none;
+color:rgba(228,57,60,1);
+margin:60px 0px 0px 150px;
+}
+
+
+.divMain
+{
+
+ background-image:url("../Background_Pic/Login_BgPic.jpg");
+ height:600px;
+ 
+}
+
+		
+.divlogin {
+      width:350px;
+    
+	  padding:0px;
+	  margin:0px 0px 0px 840px;
+      border:1px;
+   /*   box-shadow:2px 2px 15px 5px #656565;*/
+      height:350px;
+	  border:5px solid white;
+	  background-color:rgba(255,255,255,1);
+	 
+}
+
+.inputText{
+background-color:rgba(255,255,255,0.5);
+width:160px;
+height:26px;
+border-style:1px solid;
+border-color:rgba(255,255,255,0.5);
+margin:0px 0px 0px 15px;
+
+}
+
+.inputButton{
+background-color:rgba(228,57,60,1);
+border-style:none;
+font-weight:600;
+font-size:20px;
+width:220px;
+margin:40px 0px 0px 0px;
+color:white;
+}
+
+
+.divTop{
+ background-color:white;
+ height:90px;
+ font-size:25px;
+ font-weight:20px;
+ font-family:YouYuan;
+ line-height:105px;
+ padding:0px 0px 0px 120px;
+ color:black;
+ border:0px solid white;
+ /**line-height:105px;**/  /*垂直水平调整*/
+}
+
+
+
+.span1{
+ font-weight:900;
+ color:rgba(67,67,67,1)
+}
+
+#td1{
+ border-left-style:none;
+ border-top-style:none;
+ border-bottom-style:none;
+ border-right:3px solid;
+ border-right-color:white;
+}
+
+.myTable{
+ border-left-style:none;
+ border-top-style:none;
+ border-right-style:none;
+ border-bottom:2px solid ;
+ border-bottom-color:rgba(67,67,67,0.1);
+ background-color:white;
+ font-family:YouYuan;
+ color:rgba(228,57,60,1);
+
+ font-weight:900;
+}
+</style>
+
+	</head>
+
+	<body bgcolor="white" >
+		<div class="divTop"><img  src="../pic/Logo.png" align="center">&nbsp;欢迎登陆</div>
+		
+	<div class="divMain">
+	<br><br>
+		<div class="divlogin" align="center">		
+		 <table width="350px" class="myTable">
+		    <tr>
+			  <td align="center"><font style="font-family:YouYuan">账号登录</font></td>
+			</tr>
+		 </table>
+		<br>
+			<form method="post" name="login" action="doLogin.jsp">
+			<span class="span1">用户名:</span><input name="userName" class="inputText" required="required"><br><br>
+			&nbsp;&nbsp;<span class="span1">密码:&nbsp;</span><input name="password" type="password" class="inputText" required="required"><br><br>
+			<input type="submit" class="inputButton" value="登录">
+			</form>
+			<a id="a_register" href="register.html">去注册</a>
+		</div>
+	</div>
+	<footer>2017年 公安备案号：15646542316548945</footer>
+	</body>
+</html>
+
